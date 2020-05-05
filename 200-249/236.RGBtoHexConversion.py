@@ -30,4 +30,4 @@ def toHex(var):
 def rgb(r, g, b):
 	return(toHex(r)+toHex(g)+toHex(b))
 
-print('#',rgb(r, g, b), sep='')
+print(rgb(r, g, b))
