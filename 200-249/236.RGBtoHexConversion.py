@@ -19,7 +19,7 @@ r = int(input("R: "))
 g = int(input("G: "))
 b = int(input("B: "))
 
-def rgb(var):
+def toHex(var):
 	if var < 0:
 		var = 0
 	if var > 255:
@@ -27,4 +27,7 @@ def rgb(var):
 
 	return hex(var).split('x')[-1].zfill(2)
 
-print('#',rgb(r), rgb(g), rgb(b), sep='')
+def rgb(r, g, b):
+	return(toHex(r)+toHex(g)+toHex(b))
+
+print('#',rgb(r, g, b), sep='')
